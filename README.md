@@ -1,2 +1,2 @@
-# graphbolt_src_cuda
+# gnndlp
 GNN dataloading primitives
