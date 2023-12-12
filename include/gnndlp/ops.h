@@ -23,6 +23,10 @@ std::tuple<torch::Tensor, torch::Tensor> IndexSelectCSC(
 
 torch::Tensor UVAIndexSelect(torch::Tensor input, torch::Tensor nodes);
 
+std::tuple<torch::Tensor, torch::Tensor, torch::Tensor> UniqueAndCompact(
+    const torch::Tensor src_ids, const torch::Tensor dst_ids,
+    const torch::Tensor unique_dst_ids, int num_bits = 0);
+
 }  // namespace ops
 }  // namespace cuda
 }  // namespace gnndlp
